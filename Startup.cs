@@ -1,16 +1,13 @@
-using System;
-using System.Collections.Generic;
-using System.Collections.Specialized;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Quartz;
 using Quartz.Impl;
+using Quartz.Spi;
+using QuartzWithCore.Models;
+using QuartzWithCore.Service;
 
 namespace QuartzWithCore
 {
@@ -31,8 +28,18 @@ namespace QuartzWithCore
                 options.CheckConsentNeeded = Context => true;
                 options.MinimumSameSitePolicy = Microsoft.AspNetCore.Http.SameSiteMode.None;
             });
+
             services.AddControllersWithViews();
-            services.AddSingleton(provider => GetScheduler());
+
+            services.AddHostedService<QuartzHostedService>();
+            services.AddSingleton<IJobFactory, SingletonJobFactory>();
+            services.AddSingleton<ISchedulerFactory, StdSchedulerFactory>();
+
+            services.AddSingleton<JobReminders>();
+            services.AddSingleton<ConsoleWriter>();
+            services.AddSingleton(new MyJob(type: typeof(JobReminders), expression: "0/30 0/1 * 1/1 * ?"));//Every 30 Sec
+            services.AddSingleton(new MyJob(type: typeof(ConsoleWriter), expression: "0/31 0/1 * 1/1 * ?"));//Every 30 Sec
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -64,19 +71,5 @@ namespace QuartzWithCore
             });
         }
 
-        private IScheduler GetScheduler()
-        {
-            var properties = new NameValueCollection()
-            {
-                ["quartz.scheduler.instanceName"] = "QuartzWithCore",
-                ["quartz.threadPool.type"] = "Quartz.Simpl.SimpleThreadPool, Quartz",
-                ["quartz.threadPool.threadCount"] = "3",
-                ["quartz.jobStore.type"] = "Quartz.Simpl.RAMJobStore, Quartz"
-            };
-            var schedulerFactory = new StdSchedulerFactory();
-            var scheduler = schedulerFactory.GetScheduler().Result;
-            scheduler.Start();
-            return scheduler;
-        }
     }
 }

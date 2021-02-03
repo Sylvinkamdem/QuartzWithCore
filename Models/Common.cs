@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.IO;
 
 namespace QuartzWithCore.Models
 {
@@ -16,7 +12,7 @@ namespace QuartzWithCore.Models
                 Directory.CreateDirectory(path);
             }
             path = Path.Combine(path, fileName);
-            using FileStream stream = new FileStream(path, FileMode.Create);
+            using FileStream stream = new FileStream(path, FileMode.Append);
             using TextWriter tw = new StreamWriter(stream);
             tw.WriteLine(message);
         }

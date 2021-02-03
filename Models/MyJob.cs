@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace QuartzWithCore.Models
 {
@@ -9,7 +6,7 @@ namespace QuartzWithCore.Models
     {
         public MyJob(Type type, string expression)
         {
-            Common.Logs($"MyJob at {DateTime.Now:dd-MM-yyyy HH:mm:ss}",$"MyJob{DateTime.Now:hhmmss}");
+            Common.Logs($"Create {type.Name} at {DateTime.Now:dd-MM-yyyy HH:mm:ss}",$"MyJob{DateTime.Now:ddMMyyyy}");
             Type = type;
             Expression = expression;
         }

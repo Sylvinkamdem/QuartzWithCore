@@ -1,0 +1,79 @@
+MyJob at 03-02-2021 10:31:51
+StartAsync at 03-02-2021 10:31:53
+NewJob at 03-02-2021 10:32:00
+JobReminders at 03-02-2021 10:32:00
+NewJob at 03-02-2021 10:32:30
+JobReminders at 03-02-2021 10:32:30
+NewJob at 03-02-2021 10:33:00
+JobReminders at 03-02-2021 10:33:00
+NewJob at 03-02-2021 10:33:30
+JobReminders at 03-02-2021 10:33:30
+NewJob at 03-02-2021 10:34:00
+JobReminders at 03-02-2021 10:34:00
+NewJob at 03-02-2021 10:34:30
+JobReminders at 03-02-2021 10:34:30
+NewJob at 03-02-2021 10:35:00
+JobReminders at 03-02-2021 10:35:00
+NewJob at 03-02-2021 10:35:30
+JobReminders at 03-02-2021 10:35:30
+NewJob at 03-02-2021 10:36:00
+JobReminders at 03-02-2021 10:36:00
+NewJob at 03-02-2021 10:36:30
+JobReminders at 03-02-2021 10:36:30
+Create my Job at 03-02-2021 10:50:48
+Start Quartz Hosted service at 03-02-2021 10:50:48
+Calling back jobs at 03-02-2021 10:51:00
+My Job running at 03-02-2021 10:51:00
+Calling back jobs at 03-02-2021 10:51:30
+My Job running at 03-02-2021 10:51:30
+Create my Job at 03-02-2021 11:51:26
+Start Quartz Hosted service at 03-02-2021 11:51:26
+Calling back jobs QuartzWithCore.Service.JobReminders at 03-02-2021 11:51:30
+	-My Job running at 03-02-2021 11:51:30; Context:QuartzWithCore.Service.JobReminders
+Calling back jobs QuartzWithCore.Service.JobReminders at 03-02-2021 11:52:00
+	-My Job running at 03-02-2021 11:52:00; Context:QuartzWithCore.Service.JobReminders
+Calling back jobs QuartzWithCore.Service.JobReminders at 03-02-2021 11:52:30
+	-My Job running at 03-02-2021 11:52:30; Context:QuartzWithCore.Service.JobReminders
+Calling back jobs QuartzWithCore.Service.JobReminders at 03-02-2021 11:53:00
+	-My Job running at 03-02-2021 11:53:00; Context:QuartzWithCore.Service.JobReminders
+Calling back jobs QuartzWithCore.Service.JobReminders at 03-02-2021 11:53:30
+	-My Job running at 03-02-2021 11:53:30; Context:QuartzWithCore.Service.JobReminders
+Calling back jobs QuartzWithCore.Service.JobReminders at 03-02-2021 11:54:00
+	-My Job running at 03-02-2021 11:54:00; Context:QuartzWithCore.Service.JobReminders
+Calling back jobs QuartzWithCore.Service.JobReminders at 03-02-2021 11:54:30
+	-My Job running at 03-02-2021 11:54:30; Context:QuartzWithCore.Service.JobReminders
+Calling back jobs QuartzWithCore.Service.JobReminders at 03-02-2021 11:55:00
+	-My Job running at 03-02-2021 11:55:00; Context:QuartzWithCore.Service.JobReminders
+Calling back jobs QuartzWithCore.Service.JobReminders at 03-02-2021 11:55:30
+	-My Job running at 03-02-2021 11:55:30; Context:QuartzWithCore.Service.JobReminders
+Calling back jobs QuartzWithCore.Service.JobReminders at 03-02-2021 11:56:00
+	-My Job running at 03-02-2021 11:56:00; Context:QuartzWithCore.Service.JobReminders
+Calling back jobs QuartzWithCore.Service.JobReminders at 03-02-2021 11:56:30
+	-My Job running at 03-02-2021 11:56:30; Context:QuartzWithCore.Service.JobReminders
+Calling back jobs QuartzWithCore.Service.JobReminders at 03-02-2021 11:57:00
+	-My Job running at 03-02-2021 11:57:00; Context:QuartzWithCore.Service.JobReminders
+Calling back jobs QuartzWithCore.Service.JobReminders at 03-02-2021 11:57:30
+	-My Job running at 03-02-2021 11:57:30; Context:QuartzWithCore.Service.JobReminders
+Calling back jobs QuartzWithCore.Service.JobReminders at 03-02-2021 11:58:00
+	-My Job running at 03-02-2021 11:58:00; Context:QuartzWithCore.Service.JobReminders
+Calling back jobs QuartzWithCore.Service.JobReminders at 03-02-2021 11:58:30
+	-My Job running at 03-02-2021 11:58:30; Context:QuartzWithCore.Service.JobReminders
+Calling back jobs QuartzWithCore.Service.JobReminders at 03-02-2021 11:59:00
+	-My Job running at 03-02-2021 11:59:00; Context:QuartzWithCore.Service.JobReminders
+Calling back jobs QuartzWithCore.Service.JobReminders at 03-02-2021 11:59:30
+	-My Job running at 03-02-2021 11:59:30; Context:QuartzWithCore.Service.JobReminders
+Calling back jobs QuartzWithCore.Service.JobReminders at 03-02-2021 12:00:00
+	-My Job running at 03-02-2021 12:00:00; Context:QuartzWithCore.Service.JobReminders
+Calling back jobs QuartzWithCore.Service.JobReminders at 03-02-2021 12:00:30
+	-My Job running at 03-02-2021 12:00:30; Context:QuartzWithCore.Service.JobReminders
+Create my Job at 03-02-2021 12:08:47
+Create my Job at 03-02-2021 12:08:47
+Start Quartz Hosted service at 03-02-2021 12:08:48
+Create JobReminders at 03-02-2021 12:14:13
+Create ConsoleWriter at 03-02-2021 12:14:13
+Start Quartz Hosted service at 03-02-2021 12:14:14
+	-My Job running at 03-02-2021 12:14:30; Context:QuartzWithCore.Service.JobReminders
+	-ConsoleWriter Running at03-02-2021 12:14:31
+	-ConsoleWriter Running at03-02-2021 12:15:00
+	-My Job running at 03-02-2021 12:15:30; Context:QuartzWithCore.Service.JobReminders
+	-ConsoleWriter Running at03-02-2021 12:15:31
