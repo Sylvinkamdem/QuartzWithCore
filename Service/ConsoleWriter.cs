@@ -10,6 +10,7 @@ namespace QuartzWithCore.Service
         public Task Execute(IJobExecutionContext context)
         {
             Common.Logs($"\t-ConsoleWriter Running at{DateTime.Now:dd-MM-yyyy hh:mm:ss}", $"ConsoleWriter{DateTime.Now:ddMMyyyy}");
+            Console.WriteLine($"\t-ConsoleWriter Running at{DateTime.Now:dd-MM-yyyy hh:mm:ss}");
             return Task.CompletedTask;
         }
     }
