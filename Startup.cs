@@ -37,8 +37,10 @@ namespace QuartzWithCore
 
             services.AddSingleton<JobReminders>();
             services.AddSingleton<ConsoleWriter>();
+            services.AddSingleton<PullRequestJob>();
             services.AddSingleton(new MyJob(type: typeof(JobReminders), expression: "0/30 0/1 * 1/1 * ?"));//Every 30 Sec
-            services.AddSingleton(new MyJob(type: typeof(ConsoleWriter), expression: "0/31 0/1 * 1/1 * ?"));//Every 30 Sec
+            services.AddSingleton(new MyJob(type: typeof(ConsoleWriter), expression: "0/40 0/1 * 1/1 * ?"));//Every 30 Sec
+            services.AddSingleton(new MyJob(type: typeof(PullRequestJob), expression: "0/50 0/1 * 1/1 * ?"));//Every 30 Sec
 
         }
 

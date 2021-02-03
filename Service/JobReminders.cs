@@ -14,7 +14,7 @@ namespace QuartzWithCore.Service
 
         public Task Execute(IJobExecutionContext context)
         {
-            Common.Logs($"\t-My Job running at {DateTime.Now:dd-MM-yyyy HH:mm:ss}; Context:{context.JobDetail.JobType.FullName}", $"MyJob{DateTime.Now:ddMMyyyy}");
+            Common.Logs($"\t-My Job running at {DateTime.Now:dd-MM-yyyy HH:mm:ss}; Context:{context.JobDetail.JobType.FullName}", $"JobReminders{DateTime.Now:ddMMyyyy}");
             return Task.CompletedTask;
 
         }

@@ -12,9 +12,21 @@ namespace QuartzWithCore.Models
                 Directory.CreateDirectory(path);
             }
             path = Path.Combine(path, fileName);
-            using FileStream stream = new FileStream(path, FileMode.Append);
-            using TextWriter tw = new StreamWriter(stream);
-            tw.WriteLine(message);
+            
+            Restart:
+            try
+            {
+                using FileStream stream = new FileStream(path, FileMode.Append);
+                using TextWriter tw = new StreamWriter(stream);
+                tw.WriteLine(message);
+                tw.Close();
+                stream.Close();
+            }
+            catch (System.Exception)
+            {
+
+                goto Restart;
+            }
         }
     }
 }
