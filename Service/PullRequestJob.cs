@@ -17,7 +17,7 @@ namespace QuartzWithCore.Service
 
         public Task Execute(IJobExecutionContext context)
         {
-            Common.Logs($"\t-Yet Annother Job to Execute Accessing AppSettings : PcSylvin={_confign.GetConnectionString("PcSylvin")}", $"PullRequestJob{DateTime.Now:ddMMyyyy}");
+            Common.Logs($"\t-Yet Annother Job to Execute Accessing AppSettings : PcSylvin={_confign.GetConnectionString("OtherConString")}", $"PullRequestJob{DateTime.Now:ddMMyyyy}");
             return Task.CompletedTask;
         }
     }
